@@ -1,0 +1,51 @@
+﻿<!--py
+def printHeaderDates():
+	global ClassInfo
+	global RollInfo
+	startDate = ClassInfo.Rows[0]["StartDate"]
+	endDate = ClassInfo.Rows[0]["EndDate"]
+	tmpDate = startDate
+	while tmpDate <= endDate:
+		if int(tmpDate.DayOfWeek) != 0 and int(tmpDate.DayOfWeek) != 6 and int(tmpDate.DayOfWeek) != 5:
+			stdout.write(r'''<td style="border-bottom:1px solid black;"><strong>''' + tmpDate.Day.ToString() + r'''</strong></td>''')
+		:end
+		tmpDate = tmpDate.AddDays(1.0)	
+	:end	
+:end
+
+def printStudentRows():
+	global ClassInfo
+	global RollInfo
+	startDate = ClassInfo.Rows[0]["StartDate"]
+	endDate = ClassInfo.Rows[0]["EndDate"]
+	for row in RollInfo.Rows:
+		tmpDate = startDate
+		stdout.write('<tr>')
+		stdout.write('<td>' + row["LastName"].ToString() + '</td>')
+		stdout.write('<td>' + row["FirstName"].ToString() + '</td>')
+		stdout.write('<td>' + row["School"].ToString() + '</td>')
+		while tmpDate <= endDate:
+			if int(tmpDate.DayOfWeek) != 0 and int(tmpDate.DayOfWeek) != 6 and int(tmpDate.DayOfWeek) != 5:
+				stdout.write(r'''<td style="border: solid black 1px;">&nbsp;</td>''')
+			:end
+			tmpDate = tmpDate.AddDays(1.0)	
+		:end	
+		stdout.write("</tr>")
+	:end
+:end
+-->
+
+
+<h2>Millcreek High School</h2><br/>
+<strong>Session:</strong> {{ClassInfo.Rows[0]["Session"]}}</br>
+<strong>Class:</strong> {{ClassInfo.Rows[0]["Title"]}}</br>
+<strong>Teacher:</strong> {{ClassInfo.Rows[0]["LastName"]}}</br>
+<table width="100%">
+	<tr>
+		<td style="border-bottom:1px solid black;"><strong>Last Name</strong></td>
+		<td style="border-bottom:1px solid black;"><strong>First Name</strong></td>
+		<td style="border-bottom:1px solid black;"><strong>Home School</strong></td>
+		<!--py printHeaderDates() -->		
+	</tr>
+	<!--py printStudentRows() -->	
+</table>

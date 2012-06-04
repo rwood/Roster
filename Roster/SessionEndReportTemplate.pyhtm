@@ -1,0 +1,30 @@
+﻿<!--py
+def printBreakDown():
+	global TagBreakDown
+	global SessionTotal
+	for row in TagBreakDown.Rows:
+		stdout.write('<tr>')
+		stdout.write('<td>' + row["Tag"].ToString() + '</td>')
+		stdout.write('<td>$' + row["FeesPaid"].ToString() + '</td>')
+		stdout.write('<td>' + row["Count"].ToString() + '</td>')	
+		stdout.write("</tr>")
+	:end
+	stdout.write('<tr>')
+	stdout.write('<td>Total Fees</td>')
+	stdout.write('<td>$' + SessionTotal.ToString() + '</td>')
+	stdout.write('<td>--</td>')	
+	stdout.write('</tr>')
+:end
+-->
+
+
+<h2>Millcreek High School</h2><br/>
+<strong>Session:</strong> {{Session}}</br>
+<table width="100%">
+	<tr>
+		<td style="border-bottom:1px solid black;"><strong>Student Type</strong></td>
+		<td style="border-bottom:1px solid black;"><strong>Fee Grade</strong></td>
+		<td style="border-bottom:1px solid black;"><strong># Of Students</strong></td>
+	</tr>
+	<!--py printBreakDown() -->	
+</table>

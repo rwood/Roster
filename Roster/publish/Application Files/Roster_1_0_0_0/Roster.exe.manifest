@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="Roster.exe" version="1.0.0.0" publicKeyToken="4d86b0de87b9466d" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Roster" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Roster.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Data.SQLite" version="1.0.60.0" publicKeyToken="DB937BC2D44FF139" language="neutral" processorArchitecture="x86" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Roster.exe" size="219648">
+      <assemblyIdentity name="Roster" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>RlefDI/vIr057ANWHyhFRdyPteI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeifenLuo.WinFormsUI.Docking.dll" size="408064">
+      <assemblyIdentity name="WeifenLuo.WinFormsUI.Docking" version="2.2.3269.37171" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>pcqxJZgmqB8zBVd8OQOLiThEn8Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=rwood-PC\rwood" issuerKeyHash="c6951ace86b8f69cd6bf51e9fde0783c86a14ea8" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>c2Fq+U9eAD4o+UqRUCaLzYwY8R0=</DigestValue></Reference></SignedInfo><SignatureValue>Hyw23t+U9wTv+/h+sQSHPQLzHf7CPoeWYGojlk3egbRAmZKRkPOxlvRIBOeegqJEmZnqGu6oooWHK+X8rsi0PTkfLQcEhwB0/c1gDweVFqOge0aGqHj+EHtZmnNx2aQQg1zGZHNzSQXMWwQFmdK4khMYl1vrFYGJbqje4Psu/6M=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>o92B6G+6rsiHvzrCjZesk7hczpNs5ZVbEd4dStq25XmEgy/lDCt+D4gR8NXdtvNiPn3OVQ/NeLunRg/edctR2cydNAe2ifGmnVdetdlMNfXGsnlOiqrYJCaml0kl91TL/pLMtvMyuj573TTvzKnCg3fwo04tF2COCvbtQ/SuPAM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="1df1188ccd8b2650914af9283e005e4ff96a6173" Description="" Url=""><as:assemblyIdentity name="Roster.exe" version="1.0.0.0" publicKeyToken="4d86b0de87b9466d" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=rwood-PC\rwood</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>0pkx66mIWmBZxLxH8J6ykYtPrEA=</DigestValue></Reference></SignedInfo><SignatureValue>WbevnP4c4kudKyTHgck7IhR+GuSUlkwuNf5VO9bWQXROLpM6FmRgVFGFufFa9oQqTEgi8giq4CcbAZV17a8rDn5kfBPTjHzLCPXsk9RbbY/VKtIpxmTyt5rHbY8mVy1owWFUTRM1umjZ0GdxpwUBl8Evju2FmlYvZ19qYLfedwY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>o92B6G+6rsiHvzrCjZesk7hczpNs5ZVbEd4dStq25XmEgy/lDCt+D4gR8NXdtvNiPn3OVQ/NeLunRg/edctR2cydNAe2ifGmnVdetdlMNfXGsnlOiqrYJCaml0kl91TL/pLMtvMyuj573TTvzKnCg3fwo04tF2COCvbtQ/SuPAM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQxMtJjp9NUqBEws23zFq6OjANBgkqhkiG9w0BAQUFADAnMSUwIwYDVQQDHhwAcgB3AG8AbwBkAC0AUABDAFwAcgB3AG8AbwBkMB4XDTA4MTIyMDAwNTc0NFoXDTA5MTIyMDA2NTc0NFowJzElMCMGA1UEAx4cAHIAdwBvAG8AZAAtAFAAQwBcAHIAdwBvAG8AZDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAo92B6G+6rsiHvzrCjZesk7hczpNs5ZVbEd4dStq25XmEgy/lDCt+D4gR8NXdtvNiPn3OVQ/NeLunRg/edctR2cydNAe2ifGmnVdetdlMNfXGsnlOiqrYJCaml0kl91TL/pLMtvMyuj573TTvzKnCg3fwo04tF2COCvbtQ/SuPAMCAwEAATANBgkqhkiG9w0BAQUFAAOBgQAvjut9hZWcL3ABgx6p+7iYXCQrXZTv+2ppauk5VHddtH7N0fYVLfIMOUzvXAP2zSLlvdtvMNU7sIYbsk9tvtXw3BkxNLAxoyvmDsD3m62wKqgMy28htzz6C9w6fqhlQ4tec3gew6OF6r6fEILqF0xPMYDYxCeo/l5oW1PTIhxexw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
