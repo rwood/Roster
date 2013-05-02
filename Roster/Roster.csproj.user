@@ -1,7 +1,7 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>ftp://flintworx.com/upload/Roster/|publish\</PublishUrlHistory>
-    <InstallUrlHistory>http://flintworx.com/Roster/</InstallUrlHistory>
+    <PublishUrlHistory>C:\Users\Roger.wood\Desktop\Roster\|ftp://flintworx.com/upload/Roster/|publish\</PublishUrlHistory>
+    <InstallUrlHistory>http://rwood.github.io/Roster/|http://flintworx.com/Roster/</InstallUrlHistory>
     <SupportUrlHistory>
     </SupportUrlHistory>
     <UpdateUrlHistory>
