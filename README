@@ -1,1 +1,0 @@
-Roster is a program for managing students, rolls and finances for a small school.  It keeps track of semester, courses, instructors, students and some finances.  It allows for the printing of rolls, which are customizable by chaning an html template file.
